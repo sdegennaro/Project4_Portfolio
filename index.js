@@ -7,7 +7,7 @@ app.get('/', function( req, res, next ) {
   res.sendFile( __dirname + '/client/public/views/index.html' );
 });
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 app.listen(port, function() {
   console.log('up at ' + port);
 });
