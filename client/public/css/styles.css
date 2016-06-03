@@ -1,3 +1,21 @@
 body{
-  background-color: green;
+}
+
+.name-container{
+  margin-left: 20%;
+}
+
+#landing-container img{
+  z-index: -1000;
+  opacity: 0.5;
+  width: 110%;
+  overflow: hidden;
+  /*position: fixed;*/
+}
+
+#landing-container svg{
+}
+
+#img-of-me{
+  border-radius: 50%;
 }

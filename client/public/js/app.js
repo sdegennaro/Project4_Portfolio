@@ -4,5 +4,13 @@ portfolio.controller("PortfolioController",["$scope","$http","$location",functio
 
   $scope.hello = "Yo yo yo";
 
+  $scope.projects = [{
+    "name":"RESTaurant",
+    "img_url":"/images/RESTaurant.jpg"
+  },
+  {
+    "name":"Dress Me",
+    "img_url":"/images/dress-me.jpg"
+  }];
 
 }])
