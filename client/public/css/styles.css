@@ -19,3 +19,27 @@ body{
 #img-of-me{
   border-radius: 50%;
 }
+
+.project-container{
+  position: relative;
+  height: 300px;
+}
+.project-container figure{
+  margin: 0;
+  position: absolute;
+}
+
+.project-container figcaption{
+   position: absolute;
+   bottom: 0;
+   color: #fff;
+   background: rgba(0,0,0, .3);
+   font-size: .8em;
+   padding: 8px 12px;
+   opacity: 0;
+   transition: opacity .5s;
+}
+.project-container:hover figcaption{
+   transition: opacity .5s;
+   opacity: 1;
+ }

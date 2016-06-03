@@ -4,13 +4,22 @@ portfolio.controller("PortfolioController",["$scope","$http","$location",functio
 
   $scope.hello = "Yo yo yo";
 
-  $scope.projects = [{
+  $scope.projects =
+  [{
     "name":"RESTaurant",
-    "img_url":"/images/RESTaurant.jpg"
+    "img_url":"images/RESTaurant.jpg",
+    "description":"Lorem Ipsum Ipsum"
   },
   {
     "name":"Dress Me",
-    "img_url":"/images/dress-me.jpg"
+    "img_url":"images/dress-me.jpg",
+    "description":"Lorem Ipsum Ipsum"
   }];
+
+  test = function(){
+    console.log($scope.projects[0].name);
+  }
+
+  test();
 
 }])

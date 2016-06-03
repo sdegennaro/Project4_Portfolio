@@ -17,15 +17,19 @@
           <text x="0" y="100" fill="red">Samantha DeGennaro</text>
         </svg>
       </div>
-    </div>
+      </div>
       <p>{{hello}}</p>
-    </div>
-    <img id="img-of-me" src='/images/linkedinpic.jpg'>
-    <div id="projects-container">
-      <div class='project-container' ng-repeat="project in projects">
-        <h3>{{project.name}}</h3>
-        <img src="{{project.img_url}}">
+      <img id="img-of-me" src='/images/linkedinpic.jpg'>
+      <div id="projects-container">
+        <div class='project-container' ng-repeat="project in projects">
+          <h3>{{project.name}}</h3>
+          <figure>
+            <img src="{{project.img_url}}">
+            <figcaption>{{project.description}}</figcaption>
+          </figure>
+        </div>
       </div>
     </div>
+
   </body>
 </html>
