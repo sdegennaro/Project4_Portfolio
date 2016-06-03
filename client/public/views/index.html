@@ -23,10 +23,10 @@
       <div id="projects-container">
         <div class='project-container' ng-repeat="project in projects">
           <h3>{{project.name}}</h3>
-          <figure>
+          <a href="{{project.url}}"><figure>
             <img src="{{project.img_url}}">
             <figcaption>{{project.description}}</figcaption>
-          </figure>
+          </figure></a>
         </div>
       </div>
     </div>
